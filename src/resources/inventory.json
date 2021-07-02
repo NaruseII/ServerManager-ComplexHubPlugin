@@ -1,0 +1,67 @@
+{
+  "title": "§lTitle",
+  "size": 54,
+
+  "inHand": {
+    "giveInPlayerInventory": true,
+    "id": 2,
+    "data": 0,
+    "name": "§cOpen Main Inv",
+    "shine": false,
+    "slot": 0
+  },
+
+  "0": {
+    "id": 2,
+    "data": 0,
+    "name": "§cDo noting",
+    "shine": false,
+    "action":{
+      "type": "NONE"
+    }
+  },
+  "1": {
+    "id": 3,
+    "data": 0,
+    "name": "§cClose Inv",
+    "shine": false,
+    "action":{
+      "type": "CLOSE_INVENTORY"
+    }
+  },
+  "2": {
+    "id": 4,
+    "data": 0,
+    "name": "§cOpen Inv",
+    "shine": false,
+    "action":{
+      "type": "OPEN_INVENTORY",
+      "inventoryName": "inventory.json"
+    }
+  },
+  "3": {
+    "id": 5,
+    "data": 0,
+    "name": "§cTeleport To",
+    "shine": false,
+    "action":{
+      "type": "TELEPORT_TO",
+      "x": 100,
+      "y": 100,
+      "z": 100,
+      "yaw": 90,
+      "pitch": 90
+    }
+  },
+  "8": {
+    "id": 6,
+    "data": 0,
+    "name": "§cConnect to another hub",
+    "shine": false,
+    "action":{
+      "type": "SWITCH_SERVER",
+      "templateBaseName": "hub",
+      "sortType": "FIND_MOST_POPULATED"
+    }
+  }
+}
