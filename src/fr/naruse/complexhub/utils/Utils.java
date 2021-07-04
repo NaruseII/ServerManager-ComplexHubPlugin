@@ -9,7 +9,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 public class Utils {
 
     public static ItemStack buildFromSection(Configuration.ConfigurationSection section){
-        ItemStack itemStack = new ItemStack(Material.getMaterial(section.getInt("id")), 1, (short) section.getInt("data"));
+        ItemStack itemStack = new ItemStack(Material.getMaterial(section.getInt("id")), 1, (byte) section.getInt("data"));
         ItemMeta meta = itemStack.getItemMeta();
         meta.setDisplayName(section.get("name"));
         if((boolean) section.get("shine")){

@@ -1,7 +1,6 @@
 package fr.naruse.complexhub.main;
 
 import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
 import fr.naruse.complexhub.inventory.InventoryCustom;
 import fr.naruse.complexhub.utils.Table;
 import fr.naruse.complexhub.utils.Utils;
@@ -29,7 +28,7 @@ public class HubPlugin extends JavaPlugin implements Listener {
     public void onEnable() {
         super.onEnable();
 
-        Configuration defaultInv = new Configuration(new File(getDataFolder(), "inventory.json"), true);
+        Configuration defaultInv = new Configuration(new File(getDataFolder(), "inventory.json"), getClassLoader().getResourceAsStream("resources/inventory.json"));
 
         Configuration.ConfigurationSection defaultInHandSection = defaultInv.getSection("inHand");
         if((boolean) defaultInHandSection.get("giveInPlayerInventory")){
